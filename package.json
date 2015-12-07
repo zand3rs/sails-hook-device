@@ -7,7 +7,7 @@
     "isHook": true
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make MOCHA_OPTS='-C -R dot' test"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/zand3rs/sails-hook-device",
   "bugs": {
     "url": "https://github.com/zand3rs/sails-hook-device/issues"
+  },
+  "devDependencies": {
+    "node-test-helper": "^1.0.0"
   }
 }
