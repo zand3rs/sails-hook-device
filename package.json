@@ -1,7 +1,7 @@
 {
   "name": "sails-hook-device",
   "version": "0.0.1",
-  "description": "WIP: Sails extension for determining device via user-agent header.",
+  "description": "Sails extension for determining device via user-agent header.",
   "main": "index.js",
   "sails": {
     "isHook": true
@@ -17,7 +17,12 @@
     "sails",
     "hook",
     "device",
-    "mobile"
+    "ios",
+    "android",
+    "mobile",
+    "phone",
+    "tablet",
+    "webview"
   ],
   "author": "Alexander Magtipon",
   "license": "ISC",
