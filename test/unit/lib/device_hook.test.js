@@ -20,4 +20,18 @@ describe(TEST_NAME, function() {
     });
   });
 
+  describe("#initialize()", function() {
+    it("should exist", function() {
+      var deviceHook = new DeviceHook({});
+      expect(deviceHook).to.respondTo("initialize");
+    });
+
+    it("should execute the callback argument", function() {
+      var deviceHook = new DeviceHook({});
+      var callback = sinon.spy();
+      deviceHook.initialize(callback);
+      expect(callback.called).to.be.true;
+    });
+  });
+
 });
