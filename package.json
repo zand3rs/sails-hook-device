@@ -26,6 +26,7 @@
     "url": "https://github.com/zand3rs/sails-hook-device/issues"
   },
   "devDependencies": {
-    "node-test-helper": "^1.0.0"
+    "node-test-helper": "^1.0.0",
+    "sails": "^0.11.3"
   }
 }
