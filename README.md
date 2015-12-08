@@ -2,22 +2,18 @@
 
 Sails extension for determining device via user-agent header.
 
-
 ## Installation
 
 ```sh
 $ npm install sails-hook-device
 ```
 
-
 ## Usage
 
 Upon installation, a **_device_** object will be added to **_req_**.
 
-
 ```javascript
 //-- api/controllers/HomeController.js
-
 module.exports = {
   index: function(req, res) {
     res.view({ device: req.device });
@@ -25,7 +21,6 @@ module.exports = {
 };
 
 //-- views/home/index.ejs
-
 <div>
   <div><%- device.ios     %></div>
   <div><%- device.android %></div>
@@ -35,7 +30,6 @@ module.exports = {
   <div><%- device.webview %></div>
 </div>
 ```
-
 
 ## Properties
 
@@ -47,7 +41,6 @@ The ff. properties return _true_ or _false_ depending on the device used:
 * tablet
 * mobile
 * webview
-
 
 ## Methods
 
