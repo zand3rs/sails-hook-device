@@ -3,9 +3,22 @@
  *
  */
 
-var path = require("path");
-var DeviceHook = require(path.join(__dirname, "lib", "device_hook"));
+module.exports = hook;
 
-module.exports = function(sails) {
-  return new DeviceHook(sails);
-};
+
+var path = require("path");
+var handler = require(path.join(__dirname, "lib", "handler"));
+
+//==============================================================================
+
+function hook(sails) {
+  return {
+    routes: {
+      before: {
+        "all /*": handler
+      }
+    }
+  };
+}
+
+//==============================================================================
